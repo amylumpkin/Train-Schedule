@@ -23,7 +23,27 @@
   // .ref() - leave empty if want to listen to all properties/paths, enter the property value in the () if you only want to listen to that one.
   //"value" - if anything is changed the function will run
   //when referencing snapshot use: snapshot.val
-  firebase.database().ref().on("value".function(snapshot){
-  	console.log(snapshot.val());
+
+  //testing with the counter...the child in this case is 'clicks' and value is 100...in firebase.
+  var count = 100;
+
+  firebase.database().ref().on("value",function(snapshot){
+  		//why is this not working??? missing a ) ? video lesson 7.1
+  	count = snapshot.val().clicks;
+  	$("#clickValue").html(count);
+  	
+  })
+
+  $("#clickButton").on("click", function(){
+  	count--;
+  	firebase.database().ref().set({
+  		clicks:count 
+  	});
+  })
+
+  $("#restartButton").on("click", function(){
+  	firebase.database().ref().set({
+  		clicks:100
+  	});
   })
 
