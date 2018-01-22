@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Train Schedule</title>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 </head>
 
 <body>
@@ -13,6 +14,12 @@
 		<div class="jumbotron">
 			<h1>Train Schedule</h1>
 			<h2>Fill in the information below to add another train to the schedule</h2>
+
+		<!-- TESTING -->
+			<h3>Only <span id="clickValue"></span> clicks to go</h3>
+			<button id="clickButton">Click</button>
+			<button id="restartButton">Restart</button>
+		<!-- TESTING -->
 
 			<div class="row current-schedule">
 				<div class="col-md-10 col-md-offset-1">
@@ -63,7 +70,11 @@
 	</div>
 
 
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="assets/javascript/app.js"></script>
 
 
 </body>
