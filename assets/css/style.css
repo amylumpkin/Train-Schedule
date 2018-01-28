@@ -1,9 +1,21 @@
 .jumbotron .h1, .jumbotron h1 {
     color: inherit;
-    padding-left: 85px;
+    text-align: center;
+    width: 100%;
 }
 
 h2 {
     font-size: 20px;
-    padding-left: 90px;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
 }
